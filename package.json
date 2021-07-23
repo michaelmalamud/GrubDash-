@@ -13,7 +13,7 @@
     "docker:run": "docker run --rm -it -p 5000:5000 thinkful-ed/zid-be-project-grub-dash-01-qualified",
     "docker:stop": "docker stop $(docker ps -q)",
     "docker:test": "docker run -t thinkful-ed/zid-be-project-grub-dash-01-qualified npm test",
-    "start:server": "node src/server.js",
+    "start": "node src/server.js",
     "start:solution": "npm run -it docker:build && npm run docker:run",
     "test": "jest",
     "test:solution": "npm run docker:build && npm run docker:test",
@@ -30,5 +30,8 @@
   "devDependencies": {
     "jest": "^26.4.2",
     "supertest": "^5.0.0"
+  },
+  "engines": {
+    "node": "14.15.5"
   }
 }
