@@ -68,6 +68,7 @@ function create (req, res) {
         price,
         image_url
     }
+    console.log(newDish)
     dishes.push(newDish);
     res.status(201).json({ data: newDish });
 }
